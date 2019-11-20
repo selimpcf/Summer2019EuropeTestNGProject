@@ -19,6 +19,8 @@ public class vytrack {
         WebElement clickButton=driver.findElement(By.id("_submit"));
         clickButton.click();
 
+        clickButton.getText();
+
         String loginURL=driver.getCurrentUrl();
         if(loginURL.equals("https://qa1.vytrack.com/")){
             System.out.println("PASS");
