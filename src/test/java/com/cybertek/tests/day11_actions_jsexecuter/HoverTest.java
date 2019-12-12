@@ -66,6 +66,37 @@ public class HoverTest {
                 Assert.assertTrue(text.isDisplayed());
             }
 
+    }
+
+    @Test
+    public void test3() throws InterruptedException {
+        driver.get("http://practice.cybertekschool.com/hovers");
+        Actions action = new Actions(driver);
+
+        String expectedText;
+        List<WebElement> images=driver.findElements(By.xpath("//img"));
+        List<WebElement> users=driver.findElements(By.xpath("//div/h5"));
+        for(int i=0;i< users.size();i++) {
+            expectedText = "name: user" + (i + 1);
+            action.moveToElement(images.get(i)).perform();
+            Assert.assertEquals(users.get(i).getText(), expectedText);
+            Thread.sleep(1000);
+        }
+
+    }
+
+
+    @Test
+    public void Youtube(){
+
+        driver.get("https://www.youtube.com/");
+
+        WebElement search=driver.findElement(By.id("search"));
+
+        search.sendKeys("Ferdi Tayfur olsan icmezmiydin");
+
+        WebElement clickSearch=driver.findElement(By.id("search-icon-legacy"));
+        clickSearch.click();
 
 
 
