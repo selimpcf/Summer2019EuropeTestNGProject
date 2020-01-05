@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Vytack Smoke Suite">
+    <test name="QA1 Smoke Test">
+        <parameter name="env" value="qa1"></parameter>
+        <classes>
+            <class name="com.cybertek.tests.day14_pom_tests.PositiveLoginTest"></class>
+        </classes>
+    </test>
+    <test name="QA2 Smoke Test">
+        <parameter name="env" value="qa2"></parameter>
+        <classes>
+            <class name="com.cybertek.tests.day14_pom_tests.PositiveLoginTest"></class>
+        </classes>
+    </test>
+    <test name="QA3 Smoke Test">
+        <parameter name="env" value="qa3"></parameter>
+        <classes>
+            <class name="com.cybertek.tests.day14_pom_tests.PositiveLoginTest"></class>
+        </classes>
+    </test>
+</suite>

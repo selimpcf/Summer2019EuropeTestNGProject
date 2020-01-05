@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Vytack Regression Suite">
+    <test name="Regression Test">
+        <packages>
+            <package name="com.cybertek.tests.day16_review"></package>
+            <package name="com.cybertek.tests.day15_pom_tests"></package>
+        </packages>
+        <classes>
+            <class name="com.cybertek.tests.day13_properties_driver_testbase.loginTest"></class>
+            <class name="com.cybertek.tests.day14_pom_tests.PositiveLoginTest">
+                <methods>
+                    <include name="loginAsDriver"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
