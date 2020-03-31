@@ -1,4 +1,6 @@
 package com.cybertek.tests.day12_webtables;
+import com.cybertek.pages.LoginPage;
+import com.cybertek.utilities.ConfigurationReader;
 import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -21,7 +23,7 @@ public class WebTableExample {
     @AfterMethod
     public void tearDownMethod() throws InterruptedException {
         Thread.sleep(1000);
-        driver.quit();
+      //  driver.quit();
     }
     @Test
     public void printTable(){
@@ -113,6 +115,8 @@ public class WebTableExample {
         List<WebElement> allRows = driver.findElements(By.xpath("//table[@id='table1']/tbody/tr"));
         return allRows.size();
     }
+
+
 
 
 

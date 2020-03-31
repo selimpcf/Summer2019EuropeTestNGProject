@@ -1,4 +1,4 @@
-package com.cybertek.tests.day15_extend_report;
+package com.cybertek.tests.day15_extent_report;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -54,6 +54,7 @@ public class ExtentDemoTest {
         extentLogger.info("verify logged in");
         //pass()-->marks the test case as passed
         extentLogger.pass("TC342 is passed");
+
     }
     @AfterMethod
     public void teardown(){

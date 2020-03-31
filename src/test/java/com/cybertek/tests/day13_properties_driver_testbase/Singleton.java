@@ -22,10 +22,6 @@ public class Singleton {
 
 
 
-
-
-
-
     }
 
 
